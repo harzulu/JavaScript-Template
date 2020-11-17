@@ -9,8 +9,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'eval-source-map',
-  devServer: {               
-    contentBase: './dist'    
+  devServer: {
+    contentBase: './dist'
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -35,7 +35,7 @@ module.exports = {
         loader: "eslint-loader"
       },
       {
-      test: /\.(gif|png|jpe?g)$/,
+        test: /\.(gif|png|jpe?g)$/,
         use: [
           {
             loader: 'file-loader',
@@ -47,7 +47,7 @@ module.exports = {
         ]
       },
       {
-        test:/\.html$/,
+        test: /\.html$/,
         use: [
           'html-loader'
         ]
